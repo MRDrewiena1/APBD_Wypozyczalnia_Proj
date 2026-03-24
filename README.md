@@ -41,6 +41,8 @@ CLI (Program / ConsoleUI) -> Services (RentalService, EquipmentService) -> Model
   * `EquipmentService` -> zarządzanie sprzętem
   * `RentalService` -> logika wypożyczeń
 
+* Brak wydzielenia dodatkowej warstwy typu RentalApp z uwagi na poprawienie czytelności kodu/brak innej obługi niż przez CLI
+
 * `DateTime?` dla daty zwrotu (brak wartości = brak zwrotu)
 
 * Walidacja wejścia przez `TryParse`
