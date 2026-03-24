@@ -19,9 +19,7 @@ Aplikacja konsolowa do zarządzania wypożyczalnią sprzętu. System umożliwia 
 
 ## Architektura (warstwy)
 
-```
 CLI (Program / ConsoleUI) -> Services (RentalService, EquipmentService) -> Models (Equipment, User, Rental)
-```
 
 ### Opis warstw
 
@@ -45,7 +43,7 @@ CLI (Program / ConsoleUI) -> Services (RentalService, EquipmentService) -> Model
 
 * `DateTime?` dla daty zwrotu (brak wartości = brak zwrotu)
 
-* Walidacja wejśća przez `TryParse`
+* Walidacja wejścia przez `TryParse`
 
 * Dane przechowywane w pamięci (`List<T>`)
 
