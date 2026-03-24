@@ -49,7 +49,9 @@ CLI (Program / ConsoleUI) -> Services (RentalService, EquipmentService) -> Model
 
 * Dane przechowywane w pamięci (`List<T>`)
 
-* Autogenerownie Id obiektów wewnątrz ich modeli 
+* Autogenerownie Id obiektów wewnątrz ich modeli
+
+* Kara za oddanie sprzętu po terminie wyliczana jako 5% wartości sprzętu za każdy opóźniony dzień
 
 ---
 
