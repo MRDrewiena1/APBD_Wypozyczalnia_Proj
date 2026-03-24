@@ -101,13 +101,13 @@ class ConsoleUi
     static void ShowAllEquipment()
     {
         foreach (var e in _equipmentService.GetAll())
-            Console.WriteLine($"{e.Id} | {e.Brand} {e.Model} | {e.GetStatus()}");
+            Console.WriteLine($"Id: {e.Id} | Brand & Model: {e.Brand} {e.Model} | Status: {e.GetStatus()}");
     }
 
     static void ShowAvailable()
     {
         foreach (var e in _equipmentService.GetAvailable())
-            Console.WriteLine($"{e.Id} | {e.Brand} {e.Model}");
+            Console.WriteLine($"Id: {e.Id} | Brand & Model: {e.Brand} {e.Model}");
     }
 
     static void Rent()
@@ -177,7 +177,7 @@ class ConsoleUi
             var rentals = _rentalService.GetUserRentals(user);
             foreach (var r in rentals.Where(r => !r.IsReturned))
             {
-                Console.WriteLine($"{r.Id} | {r.Equipment.Brand} {r.Equipment.Model}");
+                Console.WriteLine($"RentId: {r.Id} | Brand & Model: {r.Equipment.Brand} {r.Equipment.Model}");
             }
         }
     }
@@ -189,7 +189,7 @@ class ConsoleUi
 
         foreach (var r in overdue)
         {
-            Console.WriteLine($"{r.Id} | {r.User.Name} | {r.Equipment.Model}");
+            Console.WriteLine($"RentId: {r.Id} | Username: {r.User.Name} | Brand & Model: {r.Equipment.Brand} {r.Equipment.Model}");
         }
     }
 
