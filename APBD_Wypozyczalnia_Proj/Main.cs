@@ -1,6 +1,2 @@
-namespace APBD_Wypozyczalnia_Proj;
+Console.WriteLine("Start aplikacji");
 
-public class Main
-{
-    
-}
