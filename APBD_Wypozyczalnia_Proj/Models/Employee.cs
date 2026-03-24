@@ -1,4 +1,4 @@
-namespace APBD_Wypozyczalnia_Proj;
+namespace APBD_Wypozyczalnia_Proj.Models;
 
 public class Employee : User
 {
