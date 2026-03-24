@@ -1,1 +1,6 @@
-﻿Console.WriteLine("Hello, World!");
+namespace APBD_Wypozyczalnia_Proj;
+
+public class Main
+{
+    
+}
