@@ -11,7 +11,7 @@ public class Rental
     public int Days { get; set; }
     public DateTime DueDate => RentalDate.AddDays(Days);
 
-    public DateTime ReturnDate { get; set; }
+    public DateTime? ReturnDate { get; set; }
 
     public Rental( User user, Equipment equipment, int days)
     {
@@ -23,5 +23,14 @@ public class Rental
         this.RentalDate = DateTime.Now;
     }
 
+    public bool IsReturned => ReturnDate != null;
+
+    public int GetDelayDays()
+    {
+        if (ReturnDate == null) return 0;
+
+        int delay = (ReturnDate.Value - DueDate).Days;
+        return delay > 0 ? delay : 0;
+    }
 
 }
