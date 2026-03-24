@@ -98,7 +98,7 @@ Po uruchomieniu:
 
 ---
 
-## Scenariusz demonstracyjny
+## Scenariusz demonstracyjny( znajduje się w /APBD_Wypozyczalnia_Proj/Test/RunDemo.cs )
 
 * dodanie sprzętu
 * dodanie użytkowników 
