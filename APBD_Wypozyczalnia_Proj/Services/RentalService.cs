@@ -22,7 +22,7 @@ public class RentalService
         return rental;
     }
 
-    public void ReturnEquipment(int rentalId)
+    public void ReturnEquipment(long rentalId)
     {
         var rental = _rentals.FirstOrDefault(r => r.Id == rentalId);
         if (rental == null || rental.IsReturned)

@@ -83,7 +83,8 @@ class ConsoleUi
 
         var model = ReadString("Model: ");
 
-        var price = ReadDouble("Fee price: ");
+        var price = ReadDouble("Price: ");
+        price *= 0.05;
 
         Equipment? eq = type switch
         {
@@ -135,7 +136,7 @@ class ConsoleUi
 
     static void Return()
     {
-        int rid = ReadInt("Rental ID: ");
+        long rid = ReadLong("Rental ID: ");
 
         try
         {
