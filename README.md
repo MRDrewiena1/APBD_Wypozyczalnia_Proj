@@ -49,6 +49,8 @@ CLI (Program / ConsoleUI) -> Services (RentalService, EquipmentService) -> Model
 
 * Dane przechowywane w pamięci (`List<T>`)
 
+* Autogenerownie Id obiektów wewnątrz ich modeli 
+
 ---
 
 ## Funkcjonalności
